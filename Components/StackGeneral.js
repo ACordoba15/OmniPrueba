@@ -14,7 +14,7 @@ const Stack = createStackNavigator();
 // create a component
 const StackGeneral = ({ navigation }) => {
   return (
-    <Stack.Navigator headerMode="float">
+    <Stack.Navigator>
       <Stack.Screen
         name="Inicio"
         component={Inicio}
