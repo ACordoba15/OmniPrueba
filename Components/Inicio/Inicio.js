@@ -17,8 +17,6 @@ import CardBotones from "./CardBotones";
 
 // create a component
 const Inicio = () => {
-  const [dinero, setDinero] = useState(0.0); // Agregar máscaras
-
   return (
     <View style={styles.container}>
       <StatusBar
@@ -39,7 +37,7 @@ const Inicio = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#eae9e4",
     justifyContent: "center",
     alignItems: "center",
   },

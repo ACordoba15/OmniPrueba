@@ -10,17 +10,18 @@ import {
 } from "react-native";
 import { Card } from "react-native-elements";
 import { Ionicons, Entypo, Octicons, FontAwesome5 } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 // create a component
-const CardInfo = ({ navigation }) => {
-  const [dinero, setDinero] = useState(0.0); // Agregar máscaras
+const CardInfo = () => {
+  const [dinero, setDinero] = useState(10000); // Agregar máscaras
+  const navigation = useNavigation();
 
   const CardHeader = (
     <View>
       <TouchableOpacity
         onPress={() => {
-          alert("Pulsé el cardHeader");
-          console.log("Pulsé el cardHeader");
+          navigation.navigate("Recargar");
         }}
       >
         <View style={styles.cardHeader}>
@@ -28,7 +29,9 @@ const CardInfo = ({ navigation }) => {
           <Text style={styles.texto}>Moni</Text>
           {/* Texto dinero */}
           <View style={styles.dinero}>
-            <Text style={styles.textoDinero}>₡{dinero}</Text>
+            <Text style={styles.textoDinero}>
+              ₡{parseFloat(dinero).toFixed(2)}
+            </Text>
             <Ionicons style={styles.icono} name="ios-arrow-forward" size={24} />
           </View>
         </View>

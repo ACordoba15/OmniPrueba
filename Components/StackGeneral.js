@@ -3,11 +3,12 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Button, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import Inicio from "./Inicio";
-import CuentaOrigen from "./CuentaOrigen";
-import CuentaDestino from "./CuentaDestino";
-import EnviarDinero from "./EnviarDinero";
-import EnviarFoto from "./EnviarFoto";
+import Inicio from "./Inicio/Inicio";
+import CuentaOrigen from "./EnviarDinero/CuentaOrigen";
+import CuentaDestino from "./EnviarDinero/CuentaDestino";
+import EnviarDinero from "./EnviarDinero/EnviarDinero";
+import EnviarFoto from "./EnviarDinero/EnviarFoto";
+import Recargar from "./RecargarDinero/Recargar";
 
 const Stack = createStackNavigator();
 
@@ -29,6 +30,29 @@ const StackGeneral = ({ navigation }) => {
             textAlign: "center",
           },
         }}
+      />
+      <Stack.Screen
+        name="Recargar"
+        component={Recargar}
+        options={({ navigation }) => ({
+          title: "Recarga Moni",
+          headerStyle: {
+            backgroundColor: "#0055b8",
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            textAlign: "center",
+          },
+          headerRight: () => (
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("Inicio");
+              }}
+            >
+              <Ionicons style={styles.icono} name="md-close" size={24} />
+            </TouchableOpacity>
+          ),
+        })}
       />
       <Stack.Screen
         name="CuentaOrigen"
@@ -134,5 +158,4 @@ const styles = StyleSheet.create({
   },
 });
 
-//make this component available to the app
 export default StackGeneral;

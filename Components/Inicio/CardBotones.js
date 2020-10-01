@@ -13,10 +13,10 @@ const CardBotones = () => {
       <View style={styles.cardButton}>
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate("CuentaOrigen");
+            navigation.navigate("Recargar");
           }}
         >
-          <Entypo name="wallet" size={24} color="blue" />
+          <Entypo name="wallet" size={24} color="#0055b8" />
         </TouchableOpacity>
       </View>
       <Text style={(styles.texto, { color: "gray" })}>Recargá</Text>
@@ -32,7 +32,7 @@ const CardBotones = () => {
             navigation.navigate("CuentaOrigen");
           }}
         >
-          <FontAwesome5 name="money-bill-wave" size={24} color="blue" />
+          <FontAwesome5 name="money-bill-wave" size={24} color="#0055b8" />
         </TouchableOpacity>
       </View>
       <Text style={(styles.texto, { color: "gray" })}>Enviá</Text>
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
   cardButton2: {
     height: 70,
     width: 70,
-    backgroundColor: "orange",
+    backgroundColor: "#fc4300",
     borderRadius: 10,
     padding: 10,
     elevation: 10,
