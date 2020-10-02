@@ -5,10 +5,9 @@ import { View, Text, StyleSheet } from "react-native";
 // create a component
 const EnviarFoto = ({ navigation }) => {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
-    </Tab.Navigator>
+    <View>
+      <Text>Enviar Foto</Text>
+    </View>
   );
 };
 

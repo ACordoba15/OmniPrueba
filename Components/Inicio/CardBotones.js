@@ -73,10 +73,9 @@ const CardBotones = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 3,
-    alignSelf: "center",
+    //alignSelf: "center",
     //justifyContent: "space-around",
     width: "80%",
-    //justifyContent: "center",
   },
   cardButton: {
     height: 70,
@@ -91,6 +90,7 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     justifyContent: "center",
     alignItems: "center",
+    margin: 10,
   },
   cardButton2: {
     height: 70,
@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     justifyContent: "center",
     alignItems: "center",
+    margin: 10,
   },
   texto: {
     fontSize: 15,
