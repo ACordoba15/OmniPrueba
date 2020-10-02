@@ -180,6 +180,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     flex: 1,
     marginRight: 15,
+    marginTop: 15,
   },
 });
 
