@@ -19,7 +19,6 @@ const MontoRecarga = () => {
   const [cargando, setCargando] = useState(true);
 
   const guardarDinero = async () => {
-    //var dineroFix = dinero.substring(1, dinero.length);
     alert(`Se han agregado ₡ ${parseFloat(dinero).toFixed(2)} a su cuenta`);
 
     navigation.navigate("Inicio");
@@ -83,7 +82,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 40,
-    //marginHorizontal: 25,
   },
   textoBoton: {
     fontSize: 20,

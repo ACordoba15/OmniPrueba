@@ -42,7 +42,6 @@ const Contactos = () => {
       <TouchableOpacity
         style={styles.boton}
         onPress={() => {
-          alert("Permisos otorgados");
           setPermiso(true);
           permisoContactos();
         }}
@@ -68,7 +67,6 @@ const Contactos = () => {
             <View style={styles.divider}></View>
             <TouchableOpacity
               onPress={() => {
-                alert(item.name);
                 navigation.navigate("MontoEnviar", { nombre: item.name });
               }}
             >
