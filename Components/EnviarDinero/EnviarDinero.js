@@ -1,5 +1,5 @@
 //import liraries
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 import CuentaDestino from "./CuentaDestino";
 import CuentaOrigen from "./CuentaOrigen";
@@ -11,7 +11,7 @@ import MontoEnviar from "./MontoEnviar";
     Monto a enviar 
     Confirmar 
     Enviar foto */
-const EnviarDinero = ({ navigation }) => {
+const EnviarDinero = (props) => {
   return (
     <View style={styles.container}>
       <CuentaOrigen />

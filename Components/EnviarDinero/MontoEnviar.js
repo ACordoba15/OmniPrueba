@@ -3,10 +3,12 @@ import React, { Component } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 
 // create a component
-const MontoEnviar = ({ navigation }) => {
+const MontoEnviar = ({ route, navigation }) => {
+  const { nombre } = route.params;
   return (
     <View style={styles.container}>
       <Text>MontoEnviar</Text>
+      <Text>{nombre}</Text>
       <Button
         title="Enviar Foto"
         onPress={() => {
