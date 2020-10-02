@@ -6,3 +6,11 @@ Creación de pantallas simulando ciertas funcionalidades de la SuperApp.
   - Una vez se tenga permiso, seleccionar el destinatario y seleccionar el monto a enviar.
 - Selfie
   - Luego de que se hace un envío se puede tomar una selfie y enviarla.
+
+Para ejecutar este proyecto se debe de descargar
+Se ejecuta el comando $ npm install
+una vez finaliza la instalación,
+se ejecuta el comando $ expo start
+cuando carga se tienen las opciones
+a: ejecutar en emulador de android
+w: ejecutar en el navegador
