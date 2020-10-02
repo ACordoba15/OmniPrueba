@@ -1,5 +1,6 @@
 How to Run
-You will need to have node and npm and expo setup first before you can run this project locally.
+
+You will need to have node and expo setup first before you can run this project locally.
 
 Installing and Running
 
