@@ -86,8 +86,9 @@ const MontoEnviar = ({ route, navigation }) => {
       <TouchableOpacity
         style={styles.boton}
         onPress={() => {
-          console.log(parseInt(monto.substring(0, monto.length - 2)));
-          if (parseInt(monto.substring(0, monto.length - 2)) > dinero) {
+          //console.log(parseInt(monto.substring(0, monto.length - 2)));
+          var res = monto.toString().substring(0, monto.length - 2);
+          if (parseInt(res) > dinero) {
             alert("Su cuenta no posee los fondos necesarios");
           } else {
             navigation.navigate("EnviarFoto");

@@ -28,7 +28,9 @@
     "react-native-tab-view": "^2.15.1",
     "react-native-text-input-mask": "^2.0.0",
     "react-native-web": "~0.13.12",
-    "expo-contacts": "~8.5.0"
+    "expo-contacts": "~8.5.0",
+    "expo-camera": "~9.0.0",
+    "expo-permissions": "~9.3.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"

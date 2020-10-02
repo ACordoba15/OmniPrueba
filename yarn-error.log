@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @react-native-nation/contacts-service
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add expo-image-picker
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\janco\bin;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn;C:\Program Files\Microsoft SQL Server\110\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn;C:\WINDOWS\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;D:\Program Files\PostgreSQL\12\bin;C:\Users\janco\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\MinGW\bin;C:\GTK\bin;C:\msys\1.0\bin;C:\Users\janco\AppData\Roaming\Python\Python37\Scripts;C:\Users\janco\AppData\Roaming\Python\Python37;C:\Users\janco\AppData\Local\Microsoft\WindowsApps;C:\Users\janco\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Users\janco\AppData\Local\watchman;C:\Users\janco\AppData\Local\Yarn\bin;D:\Program Files\PostgreSQL\12\bin;C:\Users\janco\AppData\Local\Programs\Microsoft VS Code\bin
@@ -14,17 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@react-native-nation%2fcontacts-service: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66097:18)
-      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
-      at Request.emit (events.js:315:20)
-      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141721:10)
-      at Request.emit (events.js:315:20)
-      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141643:12)
-      at Object.onceWrapper (events.js:421:28)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1220:12)
-      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+  Error: EPERM: operation not permitted, unlink 'D:\Archivos\Desktop\Cursos\ReactNative\OmniPrueba\omni_prueba\node_modules\@babel\plugin-external-helpers\lib'
 
 npm manifest: 
   {
@@ -47,6 +37,7 @@ npm manifest:
       "react": "16.13.1",
       "react-dom": "16.13.1",
       "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.2.tar.gz",
+      "react-native-contacts": "^5.2.7",
       "react-native-elements": "^2.3.2",
       "react-native-gesture-handler": "~1.7.0",
       "react-native-masked-text": "^1.13.0",
@@ -55,7 +46,10 @@ npm manifest:
       "react-native-screens": "~2.10.1",
       "react-native-tab-view": "^2.15.1",
       "react-native-text-input-mask": "^2.0.0",
-      "react-native-web": "~0.13.12"
+      "react-native-web": "~0.13.12",
+      "expo-contacts": "~8.5.0",
+      "expo-camera": "~9.0.0",
+      "expo-permissions": "~9.3.0"
     },
     "devDependencies": {
       "@babel/core": "~7.9.0"

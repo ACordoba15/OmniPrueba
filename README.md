@@ -1,16 +1,13 @@
-Prueba técnica para Omni
-Creación de pantallas simulando ciertas funcionalidades de la SuperApp.
+How to Run
+You will need to have node and npm and expo setup first before you can run this project locally.
 
-- Envío de dinero
-  - Para esta ventana se debe de poder acceder a los contactos almacenados en el teléfono (pedir permiso).
-  - Una vez se tenga permiso, seleccionar el destinatario y seleccionar el monto a enviar.
-- Selfie
-  - Luego de que se hace un envío se puede tomar una selfie y enviarla.
+Installing and Running
 
-Para ejecutar este proyecto se debe de descargar
-Se ejecuta el comando $ npm install
-una vez finaliza la instalación,
-se ejecuta el comando $ expo start
-cuando carga se tienen las opciones
-a: ejecutar en emulador de android
-w: ejecutar en el navegador
+- First install expo
+  \$ npm install --global expo-cli
+
+- Second run the following command to install all dependencies:
+  \$ npm install
+
+- You can then run the following command to run the project locally:
+  \$ expo start
