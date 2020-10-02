@@ -19,7 +19,7 @@ const Recargar = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#eae9e4",
+    backgroundColor: "#fff",
   },
   card: {
     height: 120,

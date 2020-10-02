@@ -36,7 +36,7 @@ const MontoRecarga = () => {
     </View>
   );
 
-  const buttonAgregar = (
+  const botonAgregar = (
     <View>
       <TouchableOpacity style={styles.boton} onPress={guardarDinero}>
         <Text style={styles.textoBoton}>Confirmar recarga</Text>
@@ -47,7 +47,7 @@ const MontoRecarga = () => {
   return (
     <View style={styles.container}>
       <View style={{ flexDirection: "column" }}>{inputDinero}</View>
-      <View>{buttonAgregar}</View>
+      <View>{botonAgregar}</View>
     </View>
   );
 };

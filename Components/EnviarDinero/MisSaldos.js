@@ -3,12 +3,11 @@ import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
 // create a component
-const EnviarFoto = ({ navigation }) => {
+const MisSaldos = () => {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
-    </Tab.Navigator>
+    <View style={styles.container}>
+      <Text>Esta sección se encuentra en constucción</Text>
+    </View>
   );
 };
 
@@ -23,4 +22,4 @@ const styles = StyleSheet.create({
 });
 
 //make this component available to the app
-export default EnviarFoto;
+export default MisSaldos;

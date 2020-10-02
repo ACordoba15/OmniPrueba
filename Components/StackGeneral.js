@@ -10,6 +10,7 @@ import CuentaDestino from "./EnviarDinero/CuentaDestino";
 import EnviarDinero from "./EnviarDinero/EnviarDinero";
 import EnviarFoto from "./EnviarDinero/EnviarFoto";
 import Recargar from "./RecargarDinero/Recargar";
+import TabGeneral from "./EnviarDinero/TabGeneral";
 
 const Stack = createStackNavigator();
 
@@ -57,7 +58,7 @@ const StackGeneral = ({ navigation }) => {
       />
       <Stack.Screen
         name="EnviarDinero"
-        component={EnviarDinero}
+        component={TabGeneral}
         options={({ navigation }) => ({
           title: "Envío de dinero",
           headerStyle: {

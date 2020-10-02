@@ -22,13 +22,18 @@ const CuentaOrigen = ({ navigation }) => {
   );
 
   const cardContainer = <View style={styles.card}>{cardCuentaOrigen}</View>;
-  return <View style={styles.container}>{cardContainer}</View>;
+  return (
+    <View>
+      <View style={styles.container}>{cardContainer}</View>
+      <Text style={styles.textoTitulo2}>Enviar a</Text>
+    </View>
+  );
 };
 
 // define your styles
 const styles = StyleSheet.create({
   container: {
-    flex: 3,
+    //flex: 4,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -55,6 +60,14 @@ const styles = StyleSheet.create({
     margin: 10,
     textAlign: "left",
     fontWeight: "bold",
+  },
+  textoTitulo2: {
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 30,
+    paddingLeft: 60,
+    fontWeight: "bold",
+    fontSize: 18,
   },
   texto: {
     fontSize: 18,
