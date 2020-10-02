@@ -1,5 +1,5 @@
 //import liraries
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import {
   View,
   Text,
@@ -12,6 +12,8 @@ import { FontAwesome } from "@expo/vector-icons";
 const { width: WIDTH } = Dimensions.get("window");
 // create a component
 const Contactos = () => {
+  const [permiso, setPermiso] = useState(false);
+
   const TextoPermisos = (
     <View style={styles.icono}>
       <FontAwesome name="user-circle" size={100} color="#0055b8" />
@@ -26,6 +28,7 @@ const Contactos = () => {
         style={styles.boton}
         onPress={() => {
           alert("Permisos otorgados");
+          setPermiso(true);
         }}
       >
         <Text style={styles.textoBoton}>Dar permisos</Text>
@@ -33,10 +36,22 @@ const Contactos = () => {
     </View>
   );
 
-  return (
-    <View style={styles.container}>
+  const seccionPermiso = (
+    <View>
       {TextoPermisos}
       {botonPermiso}
+    </View>
+  );
+
+  const contactos = (
+    <View>
+      <Text>Lista de contactos</Text>
+    </View>
+  );
+
+  return (
+    <View style={styles.container}>
+      {permiso == false ? seccionPermiso : contactos}
     </View>
   );
 };
