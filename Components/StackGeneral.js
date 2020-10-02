@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { Button, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import Inicio from "./Inicio/Inicio";
+import MontoEnviar from "./EnviarDinero/MontoEnviar";
 import CuentaOrigen from "./EnviarDinero/CuentaOrigen";
 import CuentaDestino from "./EnviarDinero/CuentaDestino";
 import EnviarDinero from "./EnviarDinero/EnviarDinero";
@@ -36,6 +37,29 @@ const StackGeneral = ({ navigation }) => {
         component={Recargar}
         options={({ navigation }) => ({
           title: "Recarga Moni",
+          headerStyle: {
+            backgroundColor: "#0055b8",
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            textAlign: "center",
+          },
+          headerRight: () => (
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("Inicio");
+              }}
+            >
+              <Ionicons style={styles.icono} name="md-close" size={24} />
+            </TouchableOpacity>
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="EnviarDinero"
+        component={EnviarDinero}
+        options={({ navigation }) => ({
+          title: "Envío de dinero",
           headerStyle: {
             backgroundColor: "#0055b8",
           },
@@ -101,8 +125,8 @@ const StackGeneral = ({ navigation }) => {
         })}
       />
       <Stack.Screen
-        name="EnviarDinero"
-        component={EnviarDinero}
+        name="MontoEnviar"
+        component={MontoEnviar}
         options={({ navigation }) => ({
           title: "Envío de dinero",
           headerStyle: {

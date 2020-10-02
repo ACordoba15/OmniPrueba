@@ -1,6 +1,9 @@
 //import liraries
 import React, { Component } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
+import CuentaDestino from "./CuentaDestino";
+import CuentaOrigen from "./CuentaOrigen";
+import MontoEnviar from "./MontoEnviar";
 
 // create a component
 /* Card cuenta origen 
@@ -11,13 +14,8 @@ import { View, Text, StyleSheet, Button } from "react-native";
 const EnviarDinero = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text>¿Cuánto dinero querés enviar?</Text>
-      <Button
-        title="Enviar Foto"
-        onPress={() => {
-          navigation.navigate("EnviarFoto");
-        }}
-      />
+      <CuentaOrigen />
+      <CuentaDestino />
     </View>
   );
 };
@@ -26,9 +24,7 @@ const EnviarDinero = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "#eae9e4",
   },
 });
 

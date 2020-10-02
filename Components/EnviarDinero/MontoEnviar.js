@@ -1,13 +1,18 @@
 //import liraries
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
 // create a component
-const EnviarFoto = ({ navigation }) => {
+const MontoEnviar = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text>EnviarFoto</Text>
-      
+      <Text>MontoEnviar</Text>
+      <Button
+        title="Enviar Foto"
+        onPress={() => {
+          navigation.navigate("EnviarFoto");
+        }}
+      />
     </View>
   );
 };
@@ -15,12 +20,11 @@ const EnviarFoto = ({ navigation }) => {
 // define your styles
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 6,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff",
   },
 });
 
 //make this component available to the app
-export default EnviarFoto;
+export default MontoEnviar;

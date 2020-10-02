@@ -29,7 +29,7 @@ const CardBotones = () => {
       <View style={styles.cardButton}>
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate("CuentaOrigen");
+            navigation.navigate("EnviarDinero");
           }}
         >
           <FontAwesome5 name="money-bill-wave" size={24} color="#0055b8" />
